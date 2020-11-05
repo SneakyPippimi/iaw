@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Ejemplo de ejercicio sin formulario.
+    Ejemplos.
+    Alexander Arevalo
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloejercicio.css" title="Color">
+</head>
+
+<body>
+  <h1>Ejemplo de ejercicio sin formulario 1</h1>
+
+  <p>Actualice la página para mostrar el circulo de distinto color</p>
+
+ 
+   <form action="respuesta.php" method ="POST">
+        <!--para introducir texto-->
+        <label for="nombre">nombre</label>
+                <input type="text" name="nombre"><!--for e name tienen que ser lo mismo-->
+                        <input type="submit" name="enviar" value="enviar"><!--el type submit es para enviar-->
+
+                        <!--checkbox-->
+                        <input type="checkbox" name="aceptar">
+                        <label for="aceptar">acepto los terminos</label>
+                            
+                        <!--radio button-->
+                        <p>ciclos:</p>
+                        <input type="radio" name="ciclos" value="ASIR">
+                        <label for="ciclos">ASIR</label>
+
+                        <P><input type="radio" name="ciclos" value="DAW">
+                        <label for="ciclos">DAW</label></P>
+                            
+                        <P><input type="radio" name="ciclos" value="DAM">
+                        <label for="ciclos">DAM</label></P>
+    
+                        <!--MENU desplegable-->
+                        <p>intereses</p>
+                        <select name="intereses" >
+                            <option>musica</option>
+                            <option>deporte</option>
+                            <option>videojokos</option>
+                        </select>
+
+                        <!--menu scroll    []para mandar mas de una opcion-->
+                        <p><label for="intereses2[]">intereses</label>
+                        <select name="intereses2[]" size="3" multiple>
+                            <option> musica</option>
+                            <option>deporte</option>
+                            <option>videojokos</option> 
+                        </select></p>
+
+                        <!--elemento oculto-->
+                        <input type="hidden" name="id" value="5454">
+
+                        <!--imagen (enviando a posicion clicada-->
+                        <input type="image" name="jhin" src="img/jhin.jpg">
+
+
+
+
+   </form>
+ 
+
+  <footer>
+    <p>Alexander Arevalo</p>
+  </footer>
+</body>
+</html>
